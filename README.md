@@ -1,2 +1,3 @@
-# DUI_Webshop
-Mocked webshop for subject "Data and IT Law"
+# Webshop
+
+Webshop for 1st practical assignment in "Data and IT Law"
