@@ -31,10 +31,9 @@ header {
     align-items: center;
 }
 
-header h1 {
-    margin: 0;
-    color: var(--primary-dark);
-    font-size: 1.5rem;
+header .logo {
+    max-height: 90px;
+    width: auto;
 }
 
 nav a {
@@ -43,6 +42,7 @@ nav a {
     font-weight: 600;
     margin-left: 1.5rem;
     transition: color 0.3s ease;
+    font-size: 1.6rem;
 }
 
 nav a:hover {
@@ -69,7 +69,7 @@ main {
 }
 
 .hero p {
-    font-size: 1.25rem;
+    font-size: 1.4rem;
     color: #555;
     max-width: 600px;
     margin: 0 auto;
@@ -131,10 +131,16 @@ footer a:hover {
     margin-bottom: 1.5rem;
 }
 
+.contact-container p,
+.contact-container li {
+    font-size: 1.4rem;
+    line-height: 1.6;
+}
+
 .contact-intro {
-    font-size: 1.25rem;
+    font-size: 1.4rem;
     margin-bottom: 2rem;
-    color: #555;
+    color: var(--primary-color);
 }
 
 .contact-details {
@@ -146,7 +152,7 @@ footer a:hover {
 }
 
 .contact-details p {
-    font-size: 1.1rem;
+    font-size: 1.4rem;
     line-height: 1.6;
     margin-bottom: 1rem;
 }
@@ -161,6 +167,25 @@ footer a:hover {
     margin-top: 2rem;
     font-style: italic;
     color: #777;
+}
+
+.contact-container h3 {
+    margin-top: 2rem;
+    font-size: 1.8rem;
+    color: var(--primary-color);
+}
+
+.contact-container h3:not(:first-of-type) {
+    border-top: 1px solid #ccc;
+    padding-top: 2rem;
+    margin-top: 2rem;
+    width: 100%;
+}
+
+.contact-container ul {
+    text-align: left;
+    display: inline-block;
+    padding-inline-start: 20px;
 }
 
 @keyframes fadeIn {

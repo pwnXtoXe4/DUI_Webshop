@@ -29,6 +29,10 @@ Some key facts about SecTech GmbH.:
 - `Address:` Wiedner Gürtel 123, 1040 Vienna, Austria
 - `Number of employees:` 25
 - `Legal form:` GmbH
-- `Website:` https://pwnxtoxe4.github.io/DUI_Webshop/
-- `Contact:` info@sechtech.com
+- `Website:` https://pwnxtoxe4.github.io/DUI_Webshop/frontend/index.html
+- `Contact:` info@sectech.com
 - `Phone:` +43 1 234 56789
+
+## Media Licenses
+
+
