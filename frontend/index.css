@@ -394,6 +394,20 @@ footer a:hover {
     z-index: 2000;
 }
 
+#tos-modal .modal-content {
+    max-height: 80vh;
+    display: flex;
+    flex-direction: column;
+}
+
+#tos-modal .tos-content {
+    overflow-y: auto;
+    flex: 1;
+    padding-right: 10px;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid #eee;
+}
+
 .form-group input:focus {
     border-color: var(--primary-color);
     outline: none;
