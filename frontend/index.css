@@ -200,6 +200,38 @@ footer a:hover {
     }
 }
 
+/* Video Section */
+.video-section {
+    margin: 4rem 0;
+    text-align: center;
+}
+
+.video-section h2 {
+    font-size: 2.5rem;
+    color: var(--primary-dark);
+    margin-bottom: 2rem;
+}
+
+.video-container {
+    max-width: 800px;
+    margin: 0 auto;
+    box-shadow: var(--shadow-hover);
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.video-container video {
+    width: 100%;
+    display: block;
+}
+
+.video-license {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    color: #666;
+    font-style: italic;
+}
+
 /* Product Styles */
 .product-category {
     margin-bottom: 4rem;
@@ -389,18 +421,21 @@ footer a:hover {
     color: var(--primary-dark);
 }
 
-/* ToS Modal - Higher Z-Index */
-#tos-modal {
+/* ToS and WCAG Modal - Higher Z-Index */
+#tos-modal,
+#wcag-modal {
     z-index: 2000;
 }
 
-#tos-modal .modal-content {
+#tos-modal .modal-content,
+#wcag-modal .modal-content {
     max-height: 80vh;
     display: flex;
     flex-direction: column;
 }
 
-#tos-modal .tos-content {
+#tos-modal .tos-content,
+#wcag-modal .wcag-content {
     overflow-y: auto;
     flex: 1;
     padding-right: 10px;
