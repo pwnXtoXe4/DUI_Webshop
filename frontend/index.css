@@ -394,6 +394,11 @@ footer a:hover {
     font-family: inherit;
 }
 
+.trademark-desc {
+    font-size: 0.3rem;
+    color: var(--primary-light);
+}
+
 /* Checkbox specific styles */
 .checkbox-group {
     display: flex;
