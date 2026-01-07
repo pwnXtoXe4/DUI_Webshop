@@ -184,7 +184,8 @@
 
     <footer>
         <p>&copy; 2025 SecTech GmbH. <a href="contact.html">Contact Us</a> | <a href="license.html">License</a> | <a
-                href="legal_notice.html">Legal Notice</a> | <a href="accessibility.html">Accessibility</a> | <a href="privacy_policy.html">Privacy Policy</a></p>
+                href="legal_notice.html">Legal Notice</a> | <a href="accessibility.html">Accessibility</a> | <a
+                href="privacy_policy.html">Privacy Policy</a></p>
     </footer>
 
     <!-- Buy Modal -->
@@ -195,24 +196,25 @@
             <p id="modal-product-summary"></p>
 
             <div id="modal-form-container">
+                <p class="form-legend"><strong>*</strong> indicates required fields</p>
                 <form id="checkout-form">
                     <div class="form-group">
-                        <label for="email">Email Address</label>
+                        <label for="email">Email Address *</label>
                         <input type="email" id="email" required placeholder="you@example.com">
                     </div>
                     <div class="form-group">
-                        <label for="card">Credit Card Number</label>
+                        <label for="card">Credit Card Number *</label>
                         <input type="text" id="card" required pattern="\d{16}" title="Please enter exactly 16 digits"
                             maxlength="16" placeholder="0000 0000 0000 0000">
                     </div>
                     <div class="form-row">
                         <div class="form-group">
-                            <label for="expiry">Expiry Date</label>
+                            <label for="expiry">Expiry Date *</label>
                             <input type="text" id="expiry" required pattern="(0[1-9]|1[0-2])\/[0-9]{2}"
                                 title="Format: MM/YY" maxlength="5" placeholder="MM/YY">
                         </div>
                         <div class="form-group">
-                            <label for="cvc">CVC</label>
+                            <label for="cvc">CVC *</label>
                             <input type="text" id="cvc" required pattern="\d{3}" title="3 digits" maxlength="3"
                                 placeholder="123">
                         </div>
@@ -220,8 +222,7 @@
                     <div class="form-group checkbox-group">
                         <input type="checkbox" id="tos-checkbox" required>
                         <label for="tos-checkbox" class="tos-label">I have read and agree to the <a href="#"
-                                id="tos-link">Terms of
-                                Service and End User License Agreement</a></label>
+                                id="tos-link">Terms of Service and End User License Agreement</a> *</label>
                     </div>
 
                     <div class="modal-actions">
@@ -470,6 +471,20 @@
             </div>
             <div class="modal-actions">
                 <button type="button" class="cta-button close-tos-btn">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Confirmation Modal for Unsaved Changes -->
+    <div id="confirm-modal" class="modal" style="z-index: 9999;">
+        <div class="modal-content" role="alertdialog" aria-modal="true" aria-labelledby="confirm-title"
+            aria-describedby="confirm-desc">
+            <h2 id="confirm-title">Unsaved Changes</h2>
+            <p id="confirm-desc">You have unsaved changes. Are you sure you want to discard them?</p>
+            <div class="modal-actions">
+                <button id="confirm-cancel-btn" class="cta-button" style="background-color: #666;">Keep
+                    Editing</button>
+                <button id="confirm-discard-btn" class="cta-button" style="background-color: #d9534f;">Discard</button>
             </div>
         </div>
     </div>
